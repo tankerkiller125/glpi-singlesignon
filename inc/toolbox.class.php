@@ -37,7 +37,7 @@ class PluginSinglesignonToolbox {
    public static function getCallbackUrl($row, $query = []) {
       global $CFG_GLPI;
 
-      $url = $CFG_GLPI['root_doc'] . '/plugins/singlesignon/front/callback.php';
+      $url = $CFG_GLPI['root_doc'] . '/marketplace/singlesignon/front/callback.php';
 
       $url .= "/provider/".$row['id'];
 
@@ -108,7 +108,7 @@ class PluginSinglesignonToolbox {
          return null;
       }
 
-      return $CFG_GLPI['root_doc'] . '/plugins/singlesignon/front/picture.send.php?path=' . $path;
+      return $CFG_GLPI['root_doc'] . '/marketplace/singlesignon/front/picture.send.php?path=' . $path;
    }
 
    static public function savePicture($src, $uniq_prefix = null) {
